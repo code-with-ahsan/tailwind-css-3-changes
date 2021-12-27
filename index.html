@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind CSS V3 Changes</title>
+  <script src="https://cdn.tailwindcss.com/"></script>
+</head>
+<body class="w-full h-full bg-gray-200">
+  <div class="container py-4">
+    <h2 class="text-xl text-center my-4">
+      Colored Box Shadows
+    </h2>
+    <div class="flex bg-white gap-4 justify-center items-center p-10">
+      <div class="shadow-sm bg-white shadow-blue-400/100 py-4 px-4 rounded-md">Click me!</div>
+      <div class="shadow-md shadow-blue-400/100 py-4 px-4 rounded-md">Click me!</div>
+      <div class="shadow-lg bg-white shadow-blue-400/100 py-4 px-4 rounded-md">Click me!</div>
+    </div>
+    <div class="flex bg-white gap-4 justify-center items-center p-10">
+      <div class="shadow-lg bg-indigo-500 shadow-indigo-400/100 py-4 px-4 rounded-md text-white">Click me!</div>
+      <div class="shadow-lg bg-blue-500 shadow-blue-400/100 py-4 px-4 rounded-md text-white">Click me!</div>
+      <div class="shadow-lg bg-cyan-500 text-white shadow-cyan-400/100 py-4 px-4 rounded-md">Click me!</div>
+    </div>
+
+    <!-- Snap API -->
+
+    <div class="bg-white relative py-9">
+      <div class="after:content-['snap'] after:ml-2 after:text-xs after:px-1.5 after:bg-indigo-500 after:text-white after:rounded after:text-[0.625rem] absolute left-0 top-0 right-0 h-full w-1 border-l-2 border-indigo-500 m-auto z-0">
+      </div>
+      <div class="relative snap-x flex overflow-auto">
+        <div class="z-1 snap-center flex-shrink-0">
+          <img src="https://images.unsplash.com/photo-1604999565976-8913ad2ddb7c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&h=160&q=80" />
+        </div>
+        <div class="z-1 snap-center flex-shrink-0">
+          <img src="https://images.unsplash.com/photo-1622890806166-111d7f6c7c97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&h=160&q=80" />
+        </div>
+        <div class="z-1 snap-center flex-shrink-0">
+          <img src="https://images.unsplash.com/photo-1590523277543-a94d2e4eb00b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&h=160&q=80" />
+        </div>
+        <div class="z-1 snap-center flex-shrink-0">
+          <img src="https://images.unsplash.com/photo-1575424909138-46b05e5919ec?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&h=160&q=80" />
+        </div>
+        <div class="z-1 snap-center flex-shrink-0">
+          <img src="https://images.unsplash.com/photo-1559333086-b0a56225a93c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&h=160&q=80" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Native Form Control Styling -->
+    <form class="bg-gray relative p-9">
+      <div class="flex items-center justify-center space-x-6">
+        <div class="shrink-0 bg-white rounded-full">
+          <img class="p-1.5 h-16 w-16 object-cover rounded-full" src="https://www.codewithahsan.dev/_next/image?url=%2Fstatic%2Fimages%2Flogo.png&w=256&q=75" alt="Current profile photo" />
+        </div>
+        <label class="block">
+          <span class="sr-only">Choose profile photo</span>
+          <input type="file" class="block w-full text-sm text-gray-500
+          file:mr-4 file:py-2 file:px-4
+          file:rounded-full file:border-0
+          file:text-sm file:font-semibold
+          file:bg-violet-50 file:text-violet-700
+          hover:file:bg-violet-100 file:cursor-pointer"/>
+        </label>
+      </div>
+      <label class="mt-6 flex items-center justify-center space-x-2 text-sm font-medium text-gray-600">
+        <input type="checkbox" class="accent-violet-500" checked/>
+        <span>Yes, send me all your stupid updates</span>
+      </label>
+    </form>
+  </div>  
+</body>
+</html>
